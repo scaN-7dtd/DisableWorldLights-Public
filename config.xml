@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config 
+
+debugLogs="false">
+	
+	
+	<!-- **** EXCLUDE EMISSIVE-SPECIAL BLOCKS -->
+	
+	<!-- *** WOOD BURNING STOVE -->
+	<LightLODCategory>
+		<Block name="cntWoodBurningStove" turnOff="false" />
+	</LightLODCategory>
+
+	<!-- *** BURNING BARREL -->
+	<LightLODCategory>
+		<Block name="burningBarrel" turnOff="false" />
+	</LightLODCategory>
+	
+	<!-- *** COLLAPSED CAMPFIRE -->
+	<Category>
+		<Block name="cntCollapsedCampfire" turnOff="false" />
+	</Category>
+	
+	<!-- *** TORCH-CANDLE -->
+	<LightCategory name="Torchs" turnOff="false">
+		<Block name="wallTorchLight" turnOff="true" />
+		<Block name="candleWallLight" turnOff="true" />
+		<Block name="candleTableLight" turnOff="true" />	
+	</LightCategory>
+	
+	<!-- *** EMBER PILES POI -->
+	<LightCategory name="EmberPiles" turnOff="false">
+		<Block name="emberPileLightPOI1" turnOff="true" />
+		<Block name="emberPileLightPOI2" turnOff="true" />
+		<Block name="emberPileFireplaceLogsLightPOI" turnOff="true" />
+	</LightCategory>
+	
+	<!-- *** EMBER PILES DECO -->
+	<Category name="EmberPilesDeco" turnOff="false">
+		<Block name="emberPileDeco1" turnOff="true" />
+		<Block name="emberPileDeco2" turnOff="true" />
+		<Block name="emberPileDeco3" turnOff="true" />
+		<Block name="emberPileDeco4" turnOff="true" />
+	</Category>
+	
+	<!-- *** TRADER JEN SIGNS -->
+	<Category name="TraderJenSigns" turnOff="false">
+		<Block name="signTraderJenInterior" turnOff="true" />
+		<Block name="signTraderJenExterior" turnOff="true" />
+	</Category>
+	 	
+	<!-- *** TRADER JOEL SIGNS -->	
+	<LightCategory name="TraderJoelSigns" turnOff="false">
+		<Block name="signTraderJoelExteriorSmall" turnOff="true" />
+		<Block name="signTraderJoelExteriorLarge" turnOff="true" />
+	</LightCategory>
+	
+	<!-- *** TRADER BOB SIGNS 1 -->	
+	<LightCategory name="TraderBobSigns1" turnOff="false">
+		<Block name="signTraderBobExterior" turnOff="true" />
+		<Block name="signTraderBobExteriorLarge" turnOff="true" />
+	</LightCategory>
+			
+	<!-- *** TRADER BOB SIGNS 2 -->
+	<Category name="TraderBobSigns2" turnOff="false">
+		<Block name="signTraderBobInterior" turnOff="true" />
+		<Block name="signTraderBobExteriorBig" turnOff="true" />
+	</Category>
+	
+	<!-- *** TRADER BOB STATIC VEHICLES -->
+	<Category name="Static" turnOff="true">
+		<Block name="motorcycleStatic" turnOff="true" />
+		<Block name="4x4Static" turnOff="true" />
+		<Block name="gyrocopterStatic" turnOff="true" />
+	</Category> 
+			
+	<!-- *** VENDING MACHINES -->
+	<Category name="VendingMachines" turnOff="false">	
+		<Block name="cntVendingMachine" turnOff="true" />
+		<Block name="cntVendingMachineTrader" turnOff="true" />
+		<Block name="cntVendingMachine2" turnOff="true" />
+		<Block name="cntVendingMachineEnergy" turnOff="true" />
+		<Block name="cntVendingMachineWater" turnOff="true" />
+		<Block name="cntVendingMachineSnacksFull" turnOff="true" />
+		<Block name="cntVendingMachineSnacksEmpty" turnOff="true" />
+		<Block name="cntVendingMachineSnacksFullBroken" turnOff="true" />
+	</Category>
+	
+	<!-- *** LANDMINES -->
+	<Category name="Landmines" turnOff="false">
+		<Block name="mineCandyTin" turnOff="true" />
+		<Block name="mineCookingPot" turnOff="true" />
+		<Block name="mineHubcap" turnOff="true" />
+		<Block name="mineAirFilter" turnOff="true" />
+	</Category>
+		
+	<!-- *** PUSH BUTTONS -->
+	<Category name="PushButtons" turnOff="true">
+		<Block name="pushButtonSwitch01" turnOff="true" />
+		<Block name="pushButtonSwitch02" turnOff="true" />
+	</Category>
+	
+	<!-- *** POWER SWITCHS -->
+	<Category name="PowerSwitchs" turnOff="true">
+		<Block name="powerSwitch01" turnOff="true" />
+		<Block name="powerSwitch02" turnOff="true" />
+	</Category>
+		
+	<!-- *** OPEN SIGNS - NEON COLD BEER SIGN -->
+	<LightCategory name="Signs" turnOff="true">
+		<Block name="signShopOpen" turnOff="true" /> <!-- just in case (the block is supposed to not be present in the world) -->
+		<Block name="signOpenWallMountChain" turnOff="true" />
+		<Block name="signOpenWallMountFrame" turnOff="true" />
+		<Block name="signOpenSideMount" turnOff="true" />
+		<Block name="signOpenCeilingMount" turnOff="true" />
+		<Block name="signNeonColdBeer" turnOff="true" />
+	</LightCategory>
+	
+	<!-- *** LIGHT PANEL LED -->
+	<Category name="LightPanelLED" turnOff="true">
+		<Block name="lightPanelLEDWhite" turnOff="true" />
+		<Block name="lightPanelLEDOffsetWhite" turnOff="true" />
+		<Block name="lightPanelLEDOffset02White" turnOff="true" />
+		<Block name="lightPanelLEDSilver" turnOff="true" />
+		<Block name="lightPanelLEDOffsetSilver" turnOff="true" />
+		<Block name="lightPanelLEDOffset02Silver" turnOff="true" />
+		<Block name="lightPanelLEDGrey" turnOff="true" />
+		<Block name="lightPanelLEDOffsetGrey" turnOff="true" />
+		<Block name="lightPanelLEDOffset02Grey" turnOff="true" />
+		<Block name="lightPanelLEDBlack" turnOff="true" />
+		<Block name="lightPanelLEDOffsetBlack" turnOff="true" />
+		<Block name="lightPanelLEDOffset02Black" turnOff="true" />
+	</Category>
+	
+	<!-- *** RECESSED LIGHTS -->
+	<Category name="RecessedLights" turnOff="true">
+		<Block name="recessedLight" turnOff="true" />
+		<Block name="recessedLightOffset" turnOff="true" />
+	</Category>
+	
+	<!-- *** FREEZER GROCERIES -->
+	<Category name="FreezerGroceries" turnOff="true">
+		<Block name="cntFreezerGroceriesMiddleEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleEmptyOpen" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleEmptyOpenBroken" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleFullClosed" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleFullClosedBroken" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleFullClosed2" turnOff="true" />
+		<Block name="cntFreezerGroceriesMiddleFullClosedBroken2" turnOff="true" />
+		<Block name="cntFreezerGroceriesLeftEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerGroceriesLeftEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerGroceriesRightEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerGroceriesRightEmptyClosedBroken" turnOff="true" />
+	</Category>
+
+	<!-- *** FREEZER BEVERAGES -->
+	<Category name="FreezerBeverages" turnOff="true">
+		<Block name="cntFreezerBeveragesMiddleEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesMiddleEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesMiddleEmptyOpen" turnOff="true" />
+		<Block name="cntFreezerBeveragesMiddleEmptyOpenBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesMiddleFullClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesMiddleFullClosedBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesLeftEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesLeftEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesRightEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesRightEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesStandaloneEmptyClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesStandaloneEmptyClosedBroken" turnOff="true" />
+		<Block name="cntFreezerBeveragesStandaloneFullClosed" turnOff="true" />
+		<Block name="cntFreezerBeveragesStandaloneFullClosedBroken" turnOff="true" />
+	</Category>
+	
+	<!-- *** MINI BEVERAGE COOLER -->
+	<Category name="MiniBeverageCooler" turnOff="true">
+		<Block name="cntMiniBeverageCooler" turnOff="true" />
+		<Block name="cntMiniBeverageCoolerEmpty" turnOff="true" />
+		<Block name="cntMiniBeverageCoolerUnderCounter" turnOff="true" />
+		<Block name="cntMiniBeverageCoolerUnderCounterEmpty" turnOff="true" />
+	</Category>
+				
+	<!-- *** RADIO - STAND IV4 -->
+	<Category name="RadioStandIV4" turnOff="true">
+		<Block name="radioHam" turnOff="true" />
+		<Block name="standIV" turnOff="true" />		
+	</Category>
+	
+	<!-- *** MOTION SENSOR -->
+	<Category name="MotionSensor" turnOff="true">
+		<Block name="motionSensorPOI" turnOff="true" />
+		<Block name="motionSensorLeftPOI" turnOff="true" />
+		<Block name="motionSensorRightPOI" turnOff="true" />
+	</Category>
+	
+	<!-- *** HYDRAULIC LIFT --> 
+	<Category name="HydraulicLift" turnOff="true">
+		<Block name="liftHydraulicWhite" turnOff="true" />
+		<Block name="liftHydraulicRed" turnOff="true" />
+		<Block name="liftHydraulicOrange" turnOff="true" />
+		<Block name="liftHydraulicYellow" turnOff="true" />
+		<Block name="liftHydraulicGreen" turnOff="true" />
+		<Block name="liftHydraulicBlue" turnOff="true" />
+		<Block name="liftHydraulicGrey" turnOff="true" />
+	</Category>
+	
+	<!-- *** SERVER RACK -->
+	<Category name="ServerRack" turnOff="true">
+		<Block name="decoServerRackWhite" turnOff="true" />
+		<Block name="decoServerRackBrown" turnOff="true" />
+		<Block name="decoServerRackRed" turnOff="true" />
+		<Block name="decoServerRackOrange" turnOff="true" />
+		<Block name="decoServerRackYellow" turnOff="true" />
+		<Block name="decoServerRackGreen" turnOff="true" />
+		<Block name="decoServerRackBlue" turnOff="true" />
+		<Block name="decoServerRackGrey" turnOff="true" />
+		<Block name="decoServerRackArmyGreen" turnOff="true" />
+	</Category>
+	
+	<!-- *** ELECTRONIC MONITORS -->
+	<Category name="ElectronicMonitors" turnOff="true">
+		<Block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitor" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitorScreensaver1" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitorScreensaver2" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsSingleBottomLaptopOpenScreensaver1" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsSingleBottomLaptopOpenScreensaver2" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsDoubleBottomGoods01Screensaver1" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsDoubleBottomGoods01Screensaver2" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsDoubleBottomGoods02Screensaver1" turnOff="true" />
+		<Block name="cntStoreShelfElectronicsDoubleBottomGoods02Screensaver2" turnOff="true" />	
+	</Category>
+	
+	<!-- *** ELEVATOR BUTTONS-PANELS -->
+	<Category name="Elevator" turnOff="true">
+		<Block name="elevatorInsidePanel" turnOff="true" />
+		<Block name="elevatorOutsideButtonPanel" turnOff="true" />
+		<Block name="elevatorOutsideFloorPanel" turnOff="true" />
+		<Block name="elevatorOutsideFloorPanelDouble" turnOff="true" />
+		<Block name="elevatorInsidePanelHalfBlock" turnOff="true" />
+		<Block name="elevatorOutsideFloorPanelHalfBlock" turnOff="true" />
+		<Block name="elevatorOutsideFloorPanelHalfBlockDouble" turnOff="true" />
+		<Block name="elevatorOutsideButtonPanelHalfBlock" turnOff="true" />
+		<Block name="elevatorOutsideFloorPanelTenthBlock" turnOff="true" />
+		<Block name="elevatorOutsideButtonPanelTenthBlock" turnOff="true" />
+		<Block name="elevatorInsidePanelPlateOffest" turnOff="true" /> <!-- devs misspelling ("offest" should be offset) -->
+	</Category>
+	
+	<!-- *** CONTROL PANEL BASE -->
+	<Category name="ControlPanelBase" turnOff="true">
+		<Block name="controlPanelBase01" turnOff="true" />
+		<Block name="controlPanelBase02" turnOff="true" />
+		<Block name="controlPanelBase03" turnOff="true" />
+		<Block name="controlPanelBase04" turnOff="true" />
+		<Block name="controlPanelBase05" turnOff="true" />
+		<Block name="controlPanelBase06" turnOff="true" />
+		<Block name="controlPanelBase07" turnOff="true" />
+		<Block name="controlPanelBase08" turnOff="true" />
+		<Block name="controlPanelCorner" turnOff="true" />
+		<Block name="controlPanelTop01" turnOff="true" />
+		<Block name="controlPanelTop02" turnOff="true" />
+		<Block name="controlPanelTop03" turnOff="true" />
+		<Block name="controlPanelTop04" turnOff="true" />
+		<Block name="controlPanelTop05" turnOff="true" />
+		<Block name="controlPanelTop06" turnOff="true" />
+		<Block name="controlPanelTop07" turnOff="true" />
+	</Category>
+
+	<!-- *** CONTROL PANEL BASE WHITE -->
+	<Category name="ControlPanelBaseWhite" turnOff="true">
+		<Block name="controlPanelBase01White" turnOff="true" />
+		<Block name="controlPanelBase02White" turnOff="true" />
+		<Block name="controlPanelBase03White" turnOff="true" />
+		<Block name="controlPanelBase04White" turnOff="true" />
+		<Block name="controlPanelBase05White" turnOff="true" />
+		<Block name="controlPanelBase06White" turnOff="true" />
+		<Block name="controlPanelBase07White" turnOff="true" />
+		<Block name="controlPanelBase08White" turnOff="true" />
+		<Block name="controlPanelCornerWhite" turnOff="true" />
+		<Block name="controlPanelTop01White" turnOff="true" />
+		<Block name="controlPanelTop02White" turnOff="true" />
+		<Block name="controlPanelTop03White" turnOff="true" />
+		<Block name="controlPanelTop04White" turnOff="true" />
+		<Block name="controlPanelTop05White" turnOff="true" />
+		<Block name="controlPanelTop06White" turnOff="true" />
+		<Block name="controlPanelTop07White" turnOff="true" />
+	</Category>
+
+	<!-- *** CONTROL PANEL BASE RED -->
+	<Category name="ControlPanelBaseRed" turnOff="true">
+		<Block name="controlPanelBase01Red" turnOff="true" />
+		<Block name="controlPanelBase02Red" turnOff="true" />
+		<Block name="controlPanelBase03Red" turnOff="true" />
+		<Block name="controlPanelBase04Red" turnOff="true" />
+		<Block name="controlPanelBase05Red" turnOff="true" />
+		<Block name="controlPanelBase06Red" turnOff="true" />
+		<Block name="controlPanelBase07Red" turnOff="true" />
+		<Block name="controlPanelBase08Red" turnOff="true" />
+		<Block name="controlPanelCornerRed" turnOff="true" />
+		<Block name="controlPanelTop01Red" turnOff="true" />
+		<Block name="controlPanelTop02Red" turnOff="true" />
+		<Block name="controlPanelTop03Red" turnOff="true" />
+		<Block name="controlPanelTop04Red" turnOff="true" />
+		<Block name="controlPanelTop05Red" turnOff="true" />
+		<Block name="controlPanelTop06Red" turnOff="true" />
+		<Block name="controlPanelTop07Red" turnOff="true" />
+	</Category>
+
+	<!-- *** CONTROL PANEL BASE GREEN -->
+	<Category name="ControlPanelBaseGreen" turnOff="true">
+		<Block name="controlPanelBase01Green" turnOff="true" />
+		<Block name="controlPanelBase02Green" turnOff="true" />
+		<Block name="controlPanelBase03Green" turnOff="true" />
+		<Block name="controlPanelBase04Green" turnOff="true" />
+		<Block name="controlPanelBase05Green" turnOff="true" />
+		<Block name="controlPanelBase06Green" turnOff="true" />
+		<Block name="controlPanelBase07Green" turnOff="true" />
+		<Block name="controlPanelBase08Green" turnOff="true" />
+		<Block name="controlPanelCornerGreen" turnOff="true" />
+		<Block name="controlPanelTop01Green" turnOff="true" />
+		<Block name="controlPanelTop02Green" turnOff="true" />
+		<Block name="controlPanelTop03Green" turnOff="true" />
+		<Block name="controlPanelTop04Green" turnOff="true" />
+		<Block name="controlPanelTop05Green" turnOff="true" />
+		<Block name="controlPanelTop06Green" turnOff="true" />
+		<Block name="controlPanelTop07Green" turnOff="true" />
+	</Category>
+
+	<!-- *** CONTROL PANEL BASE BLUE -->
+	<Category name="ControlPanelBaseBlue" turnOff="true">
+		<Block name="controlPanelBase01Blue" turnOff="true" />
+		<Block name="controlPanelBase02Blue" turnOff="true" />
+		<Block name="controlPanelBase03Blue" turnOff="true" />
+		<Block name="controlPanelBase04Blue" turnOff="true" />
+		<Block name="controlPanelBase05Blue" turnOff="true" />
+		<Block name="controlPanelBase06Blue" turnOff="true" />
+		<Block name="controlPanelBase07Blue" turnOff="true" />
+		<Block name="controlPanelBase08Blue" turnOff="true" />
+		<Block name="controlPanelCornerBlue" turnOff="true" />
+		<Block name="controlPanelTop01Blue" turnOff="true" />
+		<Block name="controlPanelTop02Blue" turnOff="true" />
+		<Block name="controlPanelTop03Blue" turnOff="true" />
+		<Block name="controlPanelTop04Blue" turnOff="true" />
+		<Block name="controlPanelTop05Blue" turnOff="true" />
+		<Block name="controlPanelTop06Blue" turnOff="true" />
+		<Block name="controlPanelTop07Blue" turnOff="true" />
+	</Category>
+
+	<!-- *** CONTROL PANEL BASE GREY -->
+	<Category name="ControlPanelBaseGrey" turnOff="true">
+		<Block name="controlPanelBase01Grey" turnOff="true" />
+		<Block name="controlPanelBase02Grey" turnOff="true" />
+		<Block name="controlPanelBase03Grey" turnOff="true" />
+		<Block name="controlPanelBase04Grey" turnOff="true" />
+		<Block name="controlPanelBase05Grey" turnOff="true" />
+		<Block name="controlPanelBase06Grey" turnOff="true" />
+		<Block name="controlPanelBase07Grey" turnOff="true" />
+		<Block name="controlPanelBase08Grey" turnOff="true" />
+		<Block name="controlPanelCornerGrey" turnOff="true" />
+		<Block name="controlPanelTop01Grey" turnOff="true" />
+		<Block name="controlPanelTop02Grey" turnOff="true" />
+		<Block name="controlPanelTop03Grey" turnOff="true" />
+		<Block name="controlPanelTop04Grey" turnOff="true" />
+		<Block name="controlPanelTop05Grey" turnOff="true" />
+		<Block name="controlPanelTop06Grey" turnOff="true" />
+		<Block name="controlPanelTop07Grey" turnOff="true" />
+	</Category>
+	
+	
+<!-- ========================================================================================================================================= -->	
+	
+	<!-- **** EXCLUDE LIGHT BLOCKS -->
+				
+	<POILightExceptions>
+	<!-- <Block name="lightWallGooseneckGrey" exclude="true" /> EXAMPLE -->
+	</POILightExceptions>
+	
+</config>

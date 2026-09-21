@@ -1,0 +1,57 @@
+<configs>
+
+	<!-- *** GAS -->
+	<set xpath="/blocks/block[@name='signShopGasLit']/property[@name='Model']/@value">@:Entities/Signs/gasSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGasWallLit']/property[@name='Model']/@value">@:Entities/Signs/gasSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGasLargeLit']/property[@name='Model']/@value">@:Entities/Signs/gasSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGasLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/gasSignWall_LargePrefab.prefab</set> 
+
+	<!-- *** GUN STORE -->
+	<set xpath="/blocks/block[@name='signShopGunStoreLit']/property[@name='Model']/@value">@:Entities/Signs/gunStoreSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreWallLit']/property[@name='Model']/@value">@:Entities/Signs/gunStoreSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreLargeLit']/property[@name='Model']/@value">@:Entities/Signs/gunStoreSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGunStoreLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/gunStoreSignWall_LargePrefab.prefab</set>
+
+	<!-- *** BOOK STORE -->
+	<set xpath="/blocks/block[@name='signShopBookStoreLit']/property[@name='Model']/@value">@:Entities/Signs/bookSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopBookStoreWallLit']/property[@name='Model']/@value">@:Entities/Signs/bookSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopBookStoreLargeLit']/property[@name='Model']/@value">@:Entities/Signs/bookSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopBookStoreLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/bookSignWall_LargePrefab.prefab</set>
+
+	<!-- *** PHARMACY -->
+	<set xpath="/blocks/block[@name='signShopPharmacyLit']/property[@name='Model']/@value">@:Entities/Signs/pharmacySignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPharmacyWallLit']/property[@name='Model']/@value">@:Entities/Signs/pharmacySignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPharmacyLargeLit']/property[@name='Model']/@value">@:Entities/Signs/pharmacySign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPharmacyLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/pharmacySignWall_LargePrefab.prefab</set>
+
+	<!-- *** TOOL STORE -->
+	<set xpath="/blocks/block[@name='signShopToolStoreLit']/property[@name='Model']/@value">@:Entities/Signs/toolSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopToolStoreWallLit']/property[@name='Model']/@value">@:Entities/Signs/toolSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopToolStoreLargeLit']/property[@name='Model']/@value">@:Entities/Signs/toolSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopToolStoreLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/toolSignWall_LargePrefab.prefab</set>
+
+	<!-- *** GROCERY -->
+	<set xpath="/blocks/block[@name='signShopGroceryLit']/property[@name='Model']/@value">@:Entities/Signs/grocerySignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGroceryWallLit']/property[@name='Model']/@value">@:Entities/Signs/grocerySignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGroceryLargeLit']/property[@name='Model']/@value">@:Entities/Signs/grocerySign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopGroceryLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/grocerySignWall_LargePrefab.prefab</set>
+
+	<!-- *** SAVAGE COUNTRY -->
+	<set xpath="/blocks/block[@name='signShopSavageCountryLit']/property[@name='Model']/@value">@:Entities/Signs/savageCountrySignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopSavageCountryWallLit']/property[@name='Model']/@value">@:Entities/Signs/savageCountrySignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopSavageCountryLargeLit']/property[@name='Model']/@value">@:Entities/Signs/savageCountrySign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopSavageCountryLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/savageCountrySignWall_LargePrefab.prefab</set>
+
+	<!-- *** MO POWER ELECTRONICS -->
+	<set xpath="/blocks/block[@name='signShopMoPowerElectronicsLit']/property[@name='Model']/@value">@:Entities/Signs/moPowerElectronicsSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopMoPowerElectronicsWallLit']/property[@name='Model']/@value">@:Entities/Signs/moPowerElectronicsSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopMoPowerElectronicsLargeLit']/property[@name='Model']/@value">@:Entities/Signs/moPowerElectronicsSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopMoPowerElectronicsLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/moPowerElectronicsSignWall_LargePrefab.prefab</set>
+
+	<!-- *** POST OFFICE -->
+	<set xpath="/blocks/block[@name='signShopPostOfficeSignLit']/property[@name='Model']/@value">@:Entities/Signs/postalOfficeSignPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPostOfficeSignWallLit']/property[@name='Model']/@value">@:Entities/Signs/postalOfficeSignWallPrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPostOfficeSignLargeLit']/property[@name='Model']/@value">@:Entities/Signs/postalOfficeSign_LargePrefab.prefab</set>
+	<set xpath="/blocks/block[@name='signShopPostOfficeSignLargeWallLit']/property[@name='Model']/@value">@:Entities/Signs/postalOfficeSignWall_LargePrefab.prefab</set>
+
+</configs>
