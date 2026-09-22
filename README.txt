@@ -75,8 +75,7 @@ config is just a logical choice aligned with the mod's title.
 
 - These two blocks are still "on":
 
-- Gas-Hazardous broken pipe - This block uses another system, I already have an unpublished mod 
-that turns them off.
+- Broken Pipe Fire Hazards - This block uses another system, to disable them use my mod "DisableBrokenPipeFireHazards"
 
 - Quest Generators - WARNING: this mod could break the "Restore Power" quest. I couldn't test it 
 because a confirmed bug prevents testing the quest in the prefab editor.
