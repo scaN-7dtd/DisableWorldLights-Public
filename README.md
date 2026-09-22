@@ -5,3 +5,5 @@ This mod allows you to disable the light emission of all blocks present in the w
 Blocks that emmit "fire" (burning barrel, ember piles, etc) can also be disabled.
 
 More information in the `README.txt` file.
+
+[youtube video](https://youtu.be/7ls_zIUrWQk)
