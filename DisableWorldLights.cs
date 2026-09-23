@@ -28,6 +28,7 @@ namespace DisableWorldLights
         public static Dictionary<string, bool> POILightExceptions = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
         public static Dictionary<string, bool> LightLODTargets = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
         public static bool DebugLogs = false;
+        public static bool ExcludeTraderAreas = false;
 
         public static void Load(string modPath)
         {
@@ -66,7 +67,11 @@ namespace DisableWorldLights
                     }
                 }
 
-                Debug.Log($"[DisableWorldLights] Config loaded: {EmissionTargets.Count} emissive targets, {BlockLightTargets.Count} light targets, {LightLODTargets.Count} special targets, {POILightExceptions.Count} POI light exceptions. Debug logs: {DebugLogs}.");
+                XElement traderAreaEl = doc.Root.Element("ExcludeTraderAreas");
+                if (traderAreaEl != null && traderAreaEl.Attribute("enabled") != null)
+                    bool.TryParse(traderAreaEl.Attribute("enabled").Value, out ExcludeTraderAreas);
+
+                Debug.Log($"[DisableWorldLights] Config loaded: {EmissionTargets.Count} emissive targets, {BlockLightTargets.Count} light targets, {LightLODTargets.Count} special targets, {POILightExceptions.Count} POI light exceptions. Debug logs: {DebugLogs}. Exclude trader areas: {ExcludeTraderAreas}.");
             }
             catch (Exception ex)
             {
@@ -100,9 +105,11 @@ namespace DisableWorldLights
     [HarmonyPatch(typeof(Block), "OnBlockEntityTransformAfterActivated")]
     internal static class DisableEmissiveGlowsPatch
     {
-        private static void Postfix(Block __instance, BlockEntityData _ebcd)
+        private static void Postfix(Block __instance, WorldBase _world, Vector3i _blockPos, BlockEntityData _ebcd)
         {
             if (_ebcd == null || !_ebcd.bHasTransform || _ebcd.transform == null) return;
+
+            if (ConfigLoader.ExcludeTraderAreas && _world is World w && w.IsWithinTraderArea(_blockPos)) return;
 
             string blockName = __instance.GetBlockName();
             if (!ConfigLoader.EmissionTargets.TryGetValue(blockName, out bool enabled) || !enabled) return;
@@ -138,6 +145,8 @@ namespace DisableWorldLights
     {
         private static void Prefix(BlockLight __instance, WorldBase _world, Vector3i _blockPos, ref BlockValue _blockValue)
         {
+            if (ConfigLoader.ExcludeTraderAreas && _world is World w && w.IsWithinTraderArea(_blockPos)) return;
+
             string blockName = __instance.GetBlockName();
             if (!ConfigLoader.BlockLightTargets.TryGetValue(blockName, out bool enabled) || !enabled) return;
 
@@ -157,6 +166,8 @@ namespace DisableWorldLights
     {
         private static void Postfix(BlockLight __instance, WorldBase _world, Vector3i _blockPos, BlockValue _blockValue)
         {
+            if (ConfigLoader.ExcludeTraderAreas && _world is World w && w.IsWithinTraderArea(_blockPos)) return;
+
             var props = __instance.Properties.Values;
 
             if (!props.ContainsKey("IndexName") || props["IndexName"] != "POILight") return;
@@ -189,6 +200,8 @@ namespace DisableWorldLights
         private static void Postfix(LightLOD __instance, BlockEntityData ___bed)
         {
             if (___bed == null || !___bed.bHasTransform || ___bed.transform == null) return;
+
+            if (ConfigLoader.ExcludeTraderAreas && GameManager.Instance.World.IsWithinTraderArea(___bed.pos)) return;
 
             string blockName = ___bed.blockValue.Block.GetBlockName();
             if (!ConfigLoader.LightLODTargets.TryGetValue(blockName, out bool enabled) || !enabled) return;
@@ -231,6 +244,8 @@ namespace DisableWorldLights
 
                 Block block = info.blockValue.Block;
                 if (block == null) continue;
+
+                if (ConfigLoader.ExcludeTraderAreas && __instance.IsWithinTraderArea(info.blockValueRef.BlockPosition)) continue;
 
                 string blockName = block.GetBlockName();
                 if (!ConfigLoader.BlockLightTargets.TryGetValue(blockName, out bool enabled) || !enabled) continue;

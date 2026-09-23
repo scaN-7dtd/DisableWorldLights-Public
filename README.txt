@@ -7,6 +7,11 @@
 /// WARNING: this mod could break the "Restore Power" quest. I couldn't test it because a confirmed 
 bug prevents testing the quest in the prefab editor.
 
+/// Attention: If you visit a trader while the option is set to "false" and then change it to "true", 
+the LIGHT BLOCKS will not turn on again. This is due to how the code handles these blocks.
+If you used this mod before the update, you will need to restore the backup of your save that you 
+made in order to fully exclude traders.
+
 
 
  TABLE OF CONTENTS
@@ -24,9 +29,10 @@ bug prevents testing the quest in the prefab editor.
    2.3 Compatibility
    
 3. Mod Configuration
-   3.1 How to exclude Emissive-Special blocks
-   3.2 How to exclude Light blocks
-   3.3 How to exclude Sign Shop blocks
+   3.1 How to exclude Trader Areas
+   3.2 How to exclude Emissive-Special blocks
+   3.3 How to exclude Light blocks
+   3.4 How to exclude Sign Shop blocks
 
 4. Links - Bug Reports
 
@@ -49,6 +55,7 @@ config is just a logical choice aligned with the mod's title.
 
 - Disables the light/emission emited by blocks present in the world, including POIs. 
 - Blocks that emmit "fire" (burning barrel, ember piles, etc) can also be disabled.
+- Option to exclude Trader Areas (on by default).
 
 ----------------------------------------------------------------------------------------------------
 
@@ -61,6 +68,8 @@ config is just a logical choice aligned with the mod's title.
 ----------------------------------------------------------------------------------------------------
 
 1.2 DEFAULT CONFIGURATION
+
+- Now Trader Areas are excluded by default.
 
 - These blocks are EXCLUDED in the config.xml file:
 
@@ -138,7 +147,26 @@ https://www.tutorialspoint.com/xml/xml_comments.htm
 
 ----------------------------------------------------------------------------------------------------
 
-3.1 HOW TO EXCLUDE EMISSIVE-SPECIAL BLOCKS
+3.1 HOW TO EXCLUDE TRADER AREAS
+
+/// Attention: If you visit a trader while the option is set to "false" and then change it to "true", 
+the LIGHT BLOCKS will not turn on again. This is due to how the code handles these blocks.
+If you used this mod before the update, you will need to restore the backup of your save that you 
+made in order to fully exclude traders.
+
+
+
+true = default lights
+
+false = all lights off (trader signs still on with default config)
+
+
+<ExcludeTraderAreas enabled="true" />
+
+
+----------------------------------------------------------------------------------------------------
+
+3.2 HOW TO EXCLUDE EMISSIVE-SPECIAL BLOCKS
  
 This category has the blocks separated in groups, you can exclude an entire group or each block 
 individually.
@@ -176,9 +204,10 @@ of the block you want to exclude, for example:
 		<Block name="motionSensorRightPOI" turnOff="true" />
 	</Category>
 
+
 ----------------------------------------------------------------------------------------------------
 
-3.2 HOW TO EXCLUDE LIGHT BLOCKS
+3.3 HOW TO EXCLUDE LIGHT BLOCKS
 
 
 1) First of all you need to verify the block is not an Emissive-Special Block, to do that open the 
@@ -211,7 +240,7 @@ For example, to exclude all the "Gooseneck blocks":
 
 ----------------------------------------------------------------------------------------------------
 
-3.3 HOW TO EXCLUDE SIGN SHOP BLOCKS
+3.4 HOW TO EXCLUDE SIGN SHOP BLOCKS
 
 The Sign Shop blocks are the ones outside the different shops in the game (Working Stiff´s, 
 Crack a book, Pass n´Gass, etc.) These blocks cannot be toggled on or off, but they have separate 
